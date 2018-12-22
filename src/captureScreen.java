@@ -7,12 +7,12 @@ import java.util.Date;
 
 public class captureScreen {
 
-    public static void getScreen(String filePath,String fileName) throws Exception {
+    public static void captureScreen(String filePath, String fileName) throws Exception {
         Dimension screensize=Toolkit.getDefaultToolkit().getScreenSize();
         Rectangle screenReceangle=new Rectangle(screensize);
         Robot robot=new Robot();
         BufferedImage image=robot.createScreenCapture(screenReceangle);
-        File screenFile=new File(fileName+filePath);
+        File screenFile=new File(filePath+fileName);
         if(!screenFile.getParentFile().exists()) {
             screenFile.getParentFile().mkdirs();
         }
@@ -25,7 +25,7 @@ public class captureScreen {
         SimpleDateFormat sdfPath=new SimpleDateFormat("yyyymmddhhss");
         String path=sdfPath.toString();
         String name=sdfname.toString();
-        captureScreen.getScreen("D:"+File.separator+path+File.separator,name+".png");
+        captureScreen("D:"+File.separator+path+File.separator,name+".png");
     }
 
 }
