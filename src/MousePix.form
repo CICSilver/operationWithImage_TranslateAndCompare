@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="MousePix">
+  <grid id="a5527" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+    <constraints>
+      <xy x="88" y="45" width="503" height="380"/>
+    </constraints>
+    <properties>
+      <foreground color="-7032"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="605b3" class="javax.swing.JLabel">
+        <constraints/>
+        <properties>
+          <text value="pix"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
